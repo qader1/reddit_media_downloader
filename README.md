@@ -7,3 +7,7 @@ example:
     reddit.dl_sub_images('art', sort='top', limit=500, when='all')
     
 in the working directory a folder should be created with the name of the subreddit containing the images.
+
+### dependencies:
+1. praw
+2. requests
