@@ -6,8 +6,8 @@ import os
 
 
 class RedditMedia:
-    def __init__(self):
-        with open('reddit_cred.json') as f:
+    def __init__(self, cred_path):
+        with open(cred_path) as f:
             cred = json.load(f)
         self.reddit = praw.Reddit(client_id=cred['client_id'],
                                   client_secret=cred['client_secret'],
