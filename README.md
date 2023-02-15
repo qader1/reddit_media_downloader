@@ -6,7 +6,7 @@ Important: **in order to use the script you need to use your own credentials.**
 
 example:
 
-    reddit = RedditMedia()
+    reddit = RedditMedia(PATH_TO_REDDIT_CRED)
     reddit.dl_sub_images('art', sort='top', limit=500, when='all')
     
 in the working directory a folder should be created with the name of the subreddit containing the images.
